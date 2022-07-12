@@ -1,0 +1,11 @@
+user_input = str(input("Enter a value: "))
+user_input = int(user_input)
+answer = 1
+if user_input < 0:
+    print("Do not Enter a negative Number")
+elif user_input < 2:
+    print("{}! = {}".format(user_input, answer))
+else:
+    for i in range(1, (user_input + 1), 1):
+        answer = answer * i
+    print("{}! = {}".format(user_input, answer))
